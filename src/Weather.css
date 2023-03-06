@@ -1,0 +1,224 @@
+body {
+  background-color: #edf0f4;
+}
+
+.App .container {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.App .content {
+  align-content: center;
+  box-shadow: 3px 3px 5px #e4e5e5;
+  /* width: 800px; */
+  padding: 40px 50px 10px 50px;
+  margin-top: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.App .input-form {
+  text-align: center;
+}
+
+.App .search-field {
+  background-color: #e3e4e9;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  width: 60%;
+  padding-left: 40px;
+  font-size: 16px;
+  font-family: "Work Sans";
+  background-image: url("../public/location.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.App .search-field:hover {
+  box-shadow: 0 0 1px #6d6d6d;
+}
+.App .search-field:focus {
+  outline: 0 none;
+  box-shadow: inset 0 1px 1px rgba(17, 17, 17, 0.075),
+    0 0 8px rgba(8, 8, 8, 0.3);
+}
+
+.App #location-pointer {
+  cursor: pointer;
+  color: #ef7151;
+  padding: 0px 5px 0px;
+}
+
+.App .main-info {
+  justify-content: center;
+  margin: 0 70px;
+}
+
+.App .col-3 {
+  margin: 30px 0;
+}
+
+.App .city-time {
+  text-align: left;
+}
+
+.App .city {
+  font-size: 50px;
+  font-weight: 500;
+  opacity: 85%;
+}
+
+.App .weekday {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 50%;
+  margin-top: 5px;
+}
+
+.App .time {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.App .weather-icon {
+  text-align: center;
+}
+
+.App .weather-icon img {
+  max-height: 60px;
+  opacity: 40%;
+}
+
+.App .col-md-3.icon {
+  align-self: flex-end;
+  padding: 10px 0 10px;
+}
+
+.App .current-weather {
+  text-align: center;
+}
+
+.App .inline {
+  display: inline;
+}
+
+.App .temperature {
+  font-size: 70px;
+  font-weight: 500;
+  opacity: 90%;
+  position: relative;
+}
+.App .temperature::after {
+  content: "°";
+  font-size: 2rem;
+  position: absolute;
+  top: 0px;
+}
+
+.App .temperature .unit {
+  font-size: 16px;
+  position: absolute;
+  bottom: 12px;
+  right: -13px;
+  opacity: 80%;
+  cursor: pointer;
+  color: #ef7151;
+  font-weight: bold;
+}
+
+.App .weather-text {
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 40%;
+}
+
+.App .min-temperature,
+.max-temperature,
+.celsius {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.App .weather-detail {
+  text-align: left;
+  padding-left: 28px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.App .weather-detail-icon {
+  opacity: 70%;
+  padding-right: 5px;
+}
+
+.App .detail {
+  margin: 0;
+  opacity: 35%;
+}
+
+.App .forecast-week {
+  justify-content: center;
+  margin: 30px 0 60px;
+}
+
+.App .col-md-2 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.App .forecast-icon {
+  opacity: 80%;
+  line-height: 33px;
+}
+
+.App .forecast-day {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 35%;
+}
+
+.App .footer {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 50%;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.App .footer-link {
+  color: black;
+  opacity: 90%;
+}
+
+@media (max-width: 767px) {
+  .App .city-time {
+    text-align: center;
+  }
+  .App .weather-detail {
+    padding-top: 30px;
+    padding-left: 0px;
+  }
+  .App .weather-detail div {
+    text-align: center;
+  }
+  .App #forecast-week {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin: 30px 0 30px;
+  }
+  .App .footer {
+    text-align: center;
+    margin: 5px 10px 15px;
+  }
+}
+
+@media (min-width: 767px) {
+  .App .container,
+  .container-md,
+  .container-sm {
+    max-width: 800px;
+  }
+}
