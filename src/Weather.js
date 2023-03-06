@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export default function Weather() {
   let weatherData = {
     city: "Kyiv",
